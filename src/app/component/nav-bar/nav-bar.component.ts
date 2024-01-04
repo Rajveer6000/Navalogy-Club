@@ -14,6 +14,9 @@ export class NavBarComponent {
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
+  }
   homepage(): void {
     document.getElementById("homepage")?.scrollIntoView({ behavior: "smooth" });
   }

@@ -1,34 +1,45 @@
-<div><!-- navbar.component.html -->
-  <nav class="bg-black xl:px-32 md:px-20 px-7 xl:pt-7 py-3 rounded-b-3xl ">
-    <div class="container mx-auto flex justify-between items-center hover:cursor-pointer ">
-      <a class="text-white font-bold hover:text-[#b433ff]  hover:scale-105 text-lg" (click)="homepage()">{{title}}</a>
-      <div class="hidden md:flex space-x-10 hover:cursor-pointer  ">
-        <a class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="aboutpage()">About</a>
-        <a class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="publicationspage()">Publications</a>
-        <a class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="portfoliopage()">Portfolio</a>
-        <a class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="teampage()">Team</a>
-        <a class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="contactuspage()">Contact Us</a>
-      </div>
-        <div class="md:hidden text-center">
-          <button type="button" class="text-white focus:outline-none " (click)="toggleMobileMenu()">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
-        <div *ngIf="isMobileMenuOpen" class="md:hidden">
-          <div class="md:hidden">
-            <div class="flex flex-col items-center space-y-4 ">
-              <a class="text-white" (click)="publicationspage()">About</a>
-              <a class="text-white" (click)="portfoliopage()">Portfolio</a>
-              <a class="text-white" (click)="portfoliopage()">Portfolio</a>
-              <a class="text-white" (click)="teampage()">Team</a>
-              <a class="text-white" (click)="contactuspage()">Contact Us</a>
-            </div>
-          </div>
-        </div>
+<nav class="bg-black xl:px-32 md:px-20 px-7 xl:pt-7 py-3 rounded-b-3xl">
+  <div class="container mx-auto flex justify-between items-center cursor-pointer">
+    <a class="text-white font-bold text-lg hover:text-[#b433ff] hover:scale-105" (click)="homepage()">{{title}}</a>
 
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-10">
+      <a class="nav-link" (click)="aboutpage()">About</a>
+      <a class="nav-link" (click)="publicationspage()">Publications</a>
+      <a class="nav-link" (click)="portfoliopage()">Portfolio</a>
+      <a class="nav-link" (click)="teampage()">Team</a>
+      <a class="nav-link" (click)="contactuspage()">Contact Us</a>
     </div>
-    <div class="bg-[#b433ff] h-[2px] rounded-full mt-3 w-full">
+
+    <!-- Mobile Menu Toggle Button -->
+    <div class="md:hidden text-center">
+      <button type="button" class="text-white focus:outline-none" (click)="toggleMobileMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
     </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="isMobileMenuOpen"
+    class="md:hidden fixed top-0 right-8 w-40 rounded-b-xl bg-opacity-75 my-8 py-4 bg-black "
+    (click)="closeMobileMenu()">
+    <!-- <div class="flex justify-end p-4">
+      <button type="button" class="text-white focus:outline-none" (click)="toggleMobileMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div> -->
+    <div class="flex flex-col items-center space-y-4">
+      <a class="text-white hover:text-[#b433ff] hover:border-b-2 hover:border-[#b433ff]" (click)="aboutpage()">About</a>
+      <a class="text-white hover:text-[#b433ff] hover:border-b-2 hover:border-[#b433ff]" (click)="publicationspage()">Publications</a>
+      <a class="text-white hover:text-[#b433ff] hover:border-b-2 hover:border-[#b433ff]" (click)="portfoliopage()">Portfolio</a>
+      <a class="text-white hover:text-[#b433ff] hover:border-b-2 hover:border-[#b433ff]" (click)="teampage()">Team</a>
+      <a class="text-white hover:text-[#b433ff] hover:border-b-2 hover:border-[#b433ff]" (click)="contactuspage()">Contact Us</a>
+    </div>
+  </div>
+  <div class="bg-[#b433ff] h-[2px] rounded-full  w-full my-2">
+  </div>
+</nav>
