@@ -1,17 +1,20 @@
 <!-- footer.component.html -->
 
-<footer class="bg-black rounded-t-3xl text-white p-8 px-32">
+<footer class="bg-black rounded-t-3xl text-white xl:p-8 xl:px-32 md:px-16 md:p-8 px-8 p-4">
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
-            <div>
-                <img class="w-16" src="./../../../assets/logo.png">
-                <h2 class="text-3xl font-bold mb-4">WE WOULD LOVE <br>TO HEAR FROM YOU</h2>
-                <p class="text-sm text-gray-500">Feel free to reach out if you want to <br>collaborate with us, or
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
+            <div class="mt-8">
+                <img class="xl:w-16 w-10" src="./../../../assets/logo.png">
+                <h2 class="xl:text-3xl md:text-xl xl:font-bold font-semibold mb-4">WE WOULD LOVE <br>TO HEAR FROM YOU
+                </h2>
+                <p class="xl:text-sm text-xs text-gray-500">Feel free to reach out if you want to <br>collaborate with
+                    us, or
                     simply have a chat</p>
             </div>
 
             <div class="mt-8">
-                <h2 class="text-base font-bold mb-4"><span class="border-b-2 border-[#b433ff]">Useful Links</span></h2>
+                <h2 class="text-base xl:font-bold font-semibold mb-4"><span class="border-b-2 border-[#b433ff]">Useful
+                        Links</span></h2>
                 <ul class="grid grid-rows-1 gap-4 text-gray-500">
                     <li><span class="text-white">> </span><a href="https://www.tezu.ernet.in/"
                             class="hover:border-b-2 hover:border-[#b433ff]">Tezpur University</a></li>
@@ -22,7 +25,8 @@
                 </ul>
             </div>
             <div class="mt-8">
-                <h2 class="text-base font-bold mb-4"><span class="border-b-2 border-[#b433ff]">Useful Links</span></h2>
+                <h2 class="text-base xl:font-bold font-semibold mb-4"><span class="border-b-2 border-[#b433ff]">Useful
+                        Links</span></h2>
 
                 <ul class="grid grid-rows-1 gap-1">
                     <!-- <li><span class="text-white">> </span><a
@@ -45,12 +49,13 @@
                                 (click)="contactuspage()">Contact</span></a></li>
                 </ul>
             </div>
-            <div class="mt-8">
-                <h2 class="text-base font-bold mb-4"><span class="border-b-2 border-[#b433ff]">OUR ADDRESS</span></h2>
-                <p>Tezpur University</p>
-                <p>Napaam, Tezpur, 784028</p>
-                <p>Assam, India</p>
-                <a href="mailto:team.navalogy@gmail.com">Email: team.navalogy&#64;gmail.com</a>
+            <div class="mt-8 ">
+                <h2 class="text-base xl:font-bold font-semibold mb-4"><span class="border-b-2 border-[#b433ff]">OUR
+                        ADDRESS</span></h2>
+                <p class="text-gray-500">Tezpur University</p>
+                <p class="text-gray-500">Napaam, Tezpur, 784028</p>
+                <p class="text-gray-500">Assam, India</p>
+                <a class="text-gray-500" href="mailto:team.navalogy@gmail.com">Email: team.navalogy&#64;gmail.com</a>
             </div>
         </div>
         <div class="mt-10">

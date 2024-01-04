@@ -1,34 +1,32 @@
 <div><!-- navbar.component.html -->
-  <nav class="bg-black p-4 px-32 pt-7 pb-5 rounded-b-3xl">
+  <nav class="bg-black xl:px-32 px-7 xl:pt-7 py-3 rounded-b-3xl">
     <div class="container mx-auto flex justify-between items-center hover:cursor-pointer ">
-      <a routerLink="/" class="text-white font-bold hover:text-[#b433ff] hover:scale-105 text-lg" (click)="homepage()">{{title}}</a>
+      <a class="text-white font-bold hover:text-[#b433ff] hover:scale-105 text-lg" (click)="homepage()">{{title}}</a>
       <div class="hidden md:flex space-x-10 hover:cursor-pointer ">
-        <!-- <a  class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="homepage()">Home</a> -->
-        <a  class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="aboutpage()">About</a>
-        <a  class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="publicationspage()">Publications</a>
-        <a  class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="portfoliopage()">Portfolio</a>
-        <a  class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="teampage()">Team</a>
-        <a  class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="contactuspage()">Contact Us</a>
-        <!-- <button
-          class="hover:text-white text-[#b433ff] bg-white hover:bg-[#b433ff] font-semibold  hover:scale-105 h-10 w-40  text-center rounded-xl ">Get
-          Started
-        </button> -->
+        <a class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="aboutpage()">About</a>
+        <a class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="publicationspage()">Publications</a>
+        <a class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="portfoliopage()">Portfolio</a>
+        <a class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="teampage()">Team</a>
+        <a class="text-white my-auto hover:text-[#b433ff] hover:scale-110" (click)="contactuspage()">Contact Us</a>
       </div>
-      <div class="md:hidden">
-        <button type="button" class="text-white focus:outline-none" (click)="toggleMobileMenu()">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-      </div>
-      <div *ngIf="isMobileMenuOpen" class="md:hidden">
-        <div class="md:hidden">
-          <div class="flex flex-col items-center space-y-4 mt-2">
-            <a routerLink="/" class="text-white">Home</a>
-            <a routerLink="/about" class="text-white">About</a>
-            <a routerLink="/portfolio" class="text-white">Portfolio</a>
-            <a routerLink="/team" class="text-white">Team</a>
-            <a routerLink="/contact" class="text-white">Contact</a>
+      <div>
+        <div class="md:hidden text-center">
+          <button type="button" class="text-white focus:outline-none " (click)="toggleMobileMenu()">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <div *ngIf="isMobileMenuOpen" class="md:hidden">
+          <div class="md:hidden">
+            <div class="flex flex-col items-center space-y-4 ">
+              <a class="text-white" (click)="publicationspage()">About</a>
+              <a class="text-white" (click)="portfoliopage()">Portfolio</a>
+              <a class="text-white" (click)="portfoliopage()">Portfolio</a>
+              <a class="text-white" (click)="teampage()">Team</a>
+              <a class="text-white" (click)="contactuspage()">Contact Us</a>
+            </div>
           </div>
         </div>
       </div>
