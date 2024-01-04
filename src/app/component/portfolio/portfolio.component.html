@@ -1,30 +1,21 @@
 <div class="flex justify-center text-4xl text-[#bf3fff] font-bold">
     <span class="border-b-2 border-[#b433ff]">Portfolio</span>
 </div>
-<div class="btn mt-10 mb-3">
-    <ul class="flex flex-col md:flex-row justify-around">
-        <li class="mb-2">
-            <button id="all1"
-                class="buttoncolor text-[#b433ff] bg-[#fbf3ff] md:h-10 md:w-36  hover:bg-[#b433ff] hover:text-white h-8 w-full rounded-lg font-semibold"
-                (click)="all()">All</button>
-        </li>
-        <li class="mb-2">
-            <button id="SDN1"
-                class="text-[#b433ff] bg-[#fbf3ff] md:h-10 md:w-36  hover:bg-[#b433ff] hover:text-white h-8 w-full rounded-lg font-semibold"
-                (click)="SDN()">SDN</button>
-        </li>
-        <li class="mb-2">
-            <button id="cloud1"
-                class="text-[#b433ff] bg-[#fbf3ff] md:h-10 md:w-36  hover:bg-[#b433ff] hover:text-white h-8 w-full rounded-lg font-semibold"
-                (click)="cloud()">Cloud/Fog</button>
-        </li>
-        <li>
-            <button id="hardware1"
-                class="text-[#b433ff] bg-[#fbf3ff] md:h-10 md:w-36  hover:bg-[#b433ff] hover:text-white h-8 w-full rounded-lg font-semibold"
-                (click)="hardware()">Hardware</button>
-        </li>
-    </ul>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-10 mb-2">
+    <button id="all1"
+        class="buttoncolor w-full md:w-36 h-8 bg-[#fbf3ff] hover:bg-[#b433ff] hover:text-white rounded-lg font-semibold"
+        (click)="all()">All</button>
+    <button id="SDN1"
+        class="text-[#b433ff] bg-[#fbf3ff] w-full md:w-36 h-8 hover:bg-[#b433ff] hover:text-white rounded-lg font-semibold"
+        (click)="SDN()">SDN</button>
+    <button id="cloud1"
+        class="text-[#b433ff] bg-[#fbf3ff] w-full md:w-36 h-8 hover:bg-[#b433ff] hover:text-white rounded-lg font-semibold"
+        (click)="cloud()">Cloud/Fog</button>
+    <button id="hardware1"
+        class="text-[#b433ff] bg-[#fbf3ff] w-full md:w-36 h-8 hover:bg-[#b433ff] hover:text-white rounded-lg font-semibold"
+        (click)="hardware()">Hardware</button>
 </div>
+
 
 <div class="bg-[#b433ff] h-[2px] rounded-full  w-full mb-10">
 </div>
