@@ -2,15 +2,13 @@
     display: block;
 
 }
-
-button img {
-
+div img {
+    
     transition: all 0.4s ease-in;
 }
-
-.activeclass button img {
+.activeclass div img {
     transform: rotate(180deg);
-
+    
 }
 .shadowclass {
     box-shadow: 5px 10px 10px #dda3ff;
