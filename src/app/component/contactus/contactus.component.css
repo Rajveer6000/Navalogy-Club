@@ -1,6 +1,19 @@
-.hovershadow{
+.hovershadow {
     box-shadow: 5px 8px 8px #e7beff;
 }
-.hovershadow1{
+
+.hovershadow1 {
     box-shadow: 0px 0px 8px 8px #e4b8fd;
+}
+
+.loading-indicator {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #b433ff;
+    color: white;
+    padding: 20px;
+    
 }

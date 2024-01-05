@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -11,6 +11,16 @@ import { CommonModule } from '@angular/common';
 export class NavBarComponent {
   isMobileMenuOpen = false;
   title = "Navalogy Club";
+  @HostListener('document:click', ['$event'])
+  handleClick(event: MouseEvent) {
+    let btn = document.getElementById("mobilenavbar");
+    if (event.target == btn) {
+      return;
+    }
+    if (this.isMobileMenuOpen = true) {
+      this.isMobileMenuOpen = false
+    }
+  }
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }

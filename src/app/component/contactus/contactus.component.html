@@ -11,7 +11,8 @@
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-6 mb-8 items-center ">
-    <div class="mb-6 md:mb-0 md:col-span-1 lg:col-span-1 sm:h-96 sm:w-96 h-80 w-80 md:w-auto md:h-auto lg:w-96 lg:h-96 mx-auto ">
+    <div
+        class="mb-6 md:mb-0 md:col-span-1 lg:col-span-1 sm:h-96 sm:w-96 h-80 w-80 md:w-auto md:h-auto lg:w-96 lg:h-96 mx-auto ">
         <img class="" src="./../../../assets/photos/Data extraction-amico.png" alt="Data extraction">
     </div>
     <div class="md:col-span-2 lg:col-span-1  hovershadow1 bg-[#fbf3ff] rounded-lg py-4  px-6">
@@ -20,36 +21,39 @@
                 Get in Touch with Our Team
             </span>
         </p>
-        <div class="grid grid-cols-6 md:gap-5 gap-4 md:py-6 py-3 md:h-auto ">
-            <div class="col-span-3  rounded-md hovershadow">
+        <div *ngIf="submitting" class="loading-indicator rounded-full">
+            Please wait...
+        </div>
+        <form class="grid grid-cols-6 md:gap-5 gap-4 md:py-6 py-3 md:h-auto">
+            <div class="col-span-3 rounded-md hovershadow">
                 <label for="name" class="sr-only">Name</label>
-                <input id="name" name="name" type="text" autocomplete="name" required
-                    class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-[#ae23ff] rounded-md focus:outline-none  focus:border-[#b433ff] focus:z-10 sm:text-sm"
+                <input id="name" name="name" type="text" required [(ngModel)]="contactus.name"
+                    class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-gray-500 rounded-md focus:outline-none focus:border-[#b433ff] focus:z-10 sm:text-sm"
                     placeholder="Name">
-
             </div>
-            <div class="col-span-3  rounded-md hovershadow">
+            <div class="col-span-3 rounded-md hovershadow">
                 <label for="email" class="sr-only">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" required
-                    class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-[#ae23ff] rounded-md focus:outline-none  focus:border-[#b433ff] focus:z-10 sm:text-sm"
+                <input id="email" name="email" type="email" required [(ngModel)]="contactus.email"
+                    class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-gray-500 rounded-md focus:outline-none focus:border-[#b433ff] focus:z-10 sm:text-sm"
                     placeholder="Email">
             </div>
             <div class="col-span-6 rounded-md hovershadow">
-                <label for="subject" class="sr-only">Subject</label>
-                <input id="subject" name="subject" type="text" autocomplete="subject" required
-                    class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-[#ae23ff] rounded-md focus:outline-none  focus:border-[#b433ff] focus:z-10 sm:text-sm"
-                    placeholder="Subject">
+                <label for="Number" class="sr-only">Number</label>
+                <input id="Number" name="Number" type="tel" required [(ngModel)]="contactus.phoneNumber"
+                    class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-gray-500 rounded-md focus:outline-none focus:border-[#b433ff] focus:z-10 sm:text-sm"
+                    placeholder="Phone Number">
             </div>
             <div class="col-span-6 rounded-md hovershadow">
                 <label for="message" class="sr-only">Message</label>
-                <textarea id="message" name="message" rows="4" autocomplete="message" required
-                    class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-[#ae23ff] rounded-md focus:outline-none  focus:border-[#b433ff] focus:z-10 sm:text-sm"
+                <textarea id="message" name="message" rows="4" required [(ngModel)]="contactus.msj"
+                    class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-gray-500 rounded-md focus:outline-none focus:border-[#b433ff] focus:z-10 sm:text-sm"
                     placeholder="Message"></textarea>
             </div>
-            <button
+            <button type="button" (click)="submit()"
                 class="col-span-6 mx-auto font-semibold hover:text-[#b433ff] text-white hover:scale-105 h-10 w-40 hover:bg-[#ffffff] bg-[#b433ff] text-center rounded-xl mt-4 md:mt-0">
                 Submit
             </button>
-        </div>
+        </form>
+
     </div>
 </div>

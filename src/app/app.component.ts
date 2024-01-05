@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
@@ -14,14 +14,18 @@ import { ContactusComponent } from './component/contactus/contactus.component';
 import { PortfolioItemComponent } from './component/portfolio-item/portfolio-item.component';
 import { Page404Component } from './page-404/page-404.component';
 import { ScrolltopComponent } from './component/scrolltop/scrolltop.component';
+import { FormsModule } from '@angular/forms';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,RouterLink, RouterOutlet, NavBarComponent, GalleryComponent, FooterComponent, HomeComponent, TeamCardComponent, TeamComponent, AboutusComponent,
-    PortfolioComponent,ScrolltopComponent, PublicationsComponent, ContactusComponent, PortfolioItemComponent, Page404Component, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [CommonModule,RouterLink,ToastrModule, RouterOutlet, NavBarComponent, GalleryComponent, FooterComponent, HomeComponent, TeamCardComponent, TeamComponent, AboutusComponent,
+    PortfolioComponent,ScrolltopComponent,FormsModule, PublicationsComponent, ContactusComponent, PortfolioItemComponent, Page404Component, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
 }

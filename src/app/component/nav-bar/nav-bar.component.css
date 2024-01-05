@@ -1,0 +1,8 @@
+.chivron {
+    
+    transition: all 0.4s ease-in;
+}
+.activeclass .chivron {
+    transform: rotate(180deg);
+    
+}
