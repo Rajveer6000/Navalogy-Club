@@ -11,48 +11,43 @@
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 items-center">
-    <div class="mb-6 md:mb-0">
-        <img src="./../../../assets/photos/Data extraction-amico.png" alt="Data extraction">
+    <div class="mb-6 md:mb-0 sm:h-96 sm:w-96 h-80 w-80 md:w-auto md:h-auto mx-auto ">
+        <img class="" src="./../../../assets/photos/Data extraction-amico.png" alt="Data extraction">
     </div>
     <div class="hovershadow1 bg-[#fbf3ff] rounded-lg py-4 px-6">
-        <p class="my-3 text-center text-2xl md:text-4xl font-extrabold text-[#000000]">
-            <span class="border-b-2 border-[#000000] text-[#bf3fff]">
-                Contact Us
-            </span>
-        </p>
-        <p class="mt-6 text-center text-xl text-[#000000]">
+        <p class="mt-6 text-center sm:text-xl text-lg text-[#000000]">
             <span class="border-b-2 border-[#000000] font-extrabold text-[#bf3fff]">
                 Get in Touch with Our Team
             </span>
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-5 py-6">
-            <div class="col-span-2 md:col-span-1 rounded-md hovershadow">
+        <div class="grid grid-cols-6 gap-5 py-6">
+            <div class="col-span-3  rounded-md hovershadow">
                 <label for="name" class="sr-only">Name</label>
                 <input id="name" name="name" type="text" autocomplete="name" required
                     class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-[#ae23ff] rounded-md focus:outline-none  focus:border-[#b433ff] focus:z-10 sm:text-sm"
                     placeholder="Name">
+
             </div>
-            <div class="hidden md:block"></div>
-            <div class="col-span-2 md:col-span-1 rounded-md hovershadow">
+            <div class="col-span-3  rounded-md hovershadow">
                 <label for="email" class="sr-only">Email</label>
                 <input id="email" name="email" type="email" autocomplete="email" required
                     class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-[#ae23ff] rounded-md focus:outline-none  focus:border-[#b433ff] focus:z-10 sm:text-sm"
                     placeholder="Email">
             </div>
-            <div class="col-span-5 rounded-md hovershadow">
+            <div class="col-span-6 rounded-md hovershadow">
                 <label for="subject" class="sr-only">Subject</label>
                 <input id="subject" name="subject" type="text" autocomplete="subject" required
                     class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-[#ae23ff] rounded-md focus:outline-none  focus:border-[#b433ff] focus:z-10 sm:text-sm"
                     placeholder="Subject">
             </div>
-            <div class="col-span-5 rounded-md hovershadow">
+            <div class="col-span-6 rounded-md hovershadow">
                 <label for="message" class="sr-only">Message</label>
                 <textarea id="message" name="message" rows="4" autocomplete="message" required
                     class="block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 bg-white text-[#ae23ff] rounded-md focus:outline-none  focus:border-[#b433ff] focus:z-10 sm:text-sm"
                     placeholder="Message"></textarea>
             </div>
             <button
-                class="col-span-5 mx-auto font-semibold text-[#b433ff] hover:scale-105 h-10 w-full md:w-40 bg-[#ffffff] hover:bg-[#b433ff] text-center rounded-xl mt-4 md:mt-0">
+                class="col-span-6 mx-auto font-semibold text-[#b433ff] hover:text-white hover:scale-105 h-10 w-full md:w-40 bg-[#ffffff] hover:bg-[#b433ff] text-center rounded-xl mt-4 md:mt-0">
                 Submit
             </button>
         </div>
