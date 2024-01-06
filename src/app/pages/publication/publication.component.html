@@ -1,0 +1,13 @@
+<div class="xl:px-32 md:px-16 px-8  py-8  xl:py-10">
+    <div class="text-4xl font-extrabold pb-3 items-center text-center"><span
+            class="text-[#bf3fff] border-b-2 border-[#b433ff]">Publications</span>
+    </div>
+    <div class="mb-8 text-center text-gray-500">Navalogy Club showcases recent publications, featuring papers and
+        journals
+        presented
+        at top-tier conferences.</div>
+    <div *ngFor="let publication of getpublication()">
+        <app-publication-card [publication]="publication"></app-publication-card>
+    </div>
+
+</div>

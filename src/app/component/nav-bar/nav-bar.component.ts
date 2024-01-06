@@ -1,16 +1,21 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router, RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
+import { waitForAsync } from '@angular/core/testing';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
+  constructor(private router: Router) { }
+
   isMobileMenuOpen = false;
   title = "Navalogy Club";
+
   @HostListener('document:click', ['$event'])
   handleClick(event: MouseEvent) {
     let btn = document.getElementById("mobilenavbar");
@@ -21,28 +26,40 @@ export class NavBarComponent {
       this.isMobileMenuOpen = false
     }
   }
+
+  
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
   closeMobileMenu() {
     this.isMobileMenuOpen = false;
   }
+  gotopage(pagename: string, id: string): void {
+    this.router.navigate([`${pagename}`]);
+    setTimeout(() => {
+      console.log("This message will be displayed after a delay");
+      document.getElementById(`${id}`)?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+
+  }
   homepage(): void {
-    document.getElementById("homepage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('', "homepage");
   }
   aboutpage(): void {
-    document.getElementById("aboutuspage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('', "aboutuspage");
   }
   publicationspage(): void {
-    document.getElementById("publicationspage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('publication', "publicationspage");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
   }
   portfoliopage(): void {
-    document.getElementById("portfoliopage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('', "portfoliopage");
   }
   teampage(): void {
-    document.getElementById("teampage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('', "teampage");
   }
   contactuspage(): void {
-    document.getElementById("contactuspage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('', "contactuspage");
   }
 }

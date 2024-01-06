@@ -18,6 +18,7 @@ export interface TeamMember {
 export class TeamComponent {
   getMentor(): TeamMember[] {
     return [
+      // Dr Nabajyoti Medhi
       {
         name: 'Dr. Nabajyoti Medhi',
         path: './../../../assets/photos/team/medhi-sir.png',
@@ -29,6 +30,7 @@ export class TeamComponent {
   }
   getCurrentScholars(): TeamMember[] {
     return [
+      // Priyanka Bardoloi
       {
         name: 'Priyanka Bardoloi',
         path: './../../../assets/photos/team/priyanka.jpg',
@@ -36,6 +38,7 @@ export class TeamComponent {
         LinkedInlink: 'https://scholar.google.com/citations?user=Qq6XheAAAAAJ&hl=en',
         GitHublink: '#',
       },
+      // Birlang Bargayary
       {
         name: 'Birlang Bargayary',
         path: './../../../assets/photos/team/birlang.jfif',
@@ -47,6 +50,7 @@ export class TeamComponent {
   }
   getCurrentmembers(): TeamMember[] {
     return [
+      // Name : Tridib Lochan Dutta
       {
         name: 'Tridib Lochan Dutta',
         path: './../../../assets/photos/team/tridib.jpeg',
@@ -54,6 +58,7 @@ export class TeamComponent {
         LinkedInlink: 'https://www.linkedin.com/in/debangee-goswami-601577222',
         GitHublink: '#',
       },
+      // Name : Pritindra Das
       {
         name: 'Pritindra Das',
         path: './../../../assets/photos/team/pritindra.jpg',
@@ -61,6 +66,7 @@ export class TeamComponent {
         LinkedInlink: 'https://in.linkedin.com/in/pritindra-das',
         GitHublink: '#',
       },
+      // Name : Vicky Deka
       {
         name: 'Vicky Deka',
         path: './../../../assets/photos/team/vicky.jpg',
@@ -68,13 +74,15 @@ export class TeamComponent {
         LinkedInlink: 'https://in.linkedin.com/in/vickydeka',
         GitHublink: '#',
       },
+      // Name : Pratik Chanda
       {
         name: 'Pratik Chanda',
         path: './../../../assets/photos/team/Pratik.jpg',
-        Designation: 'B.tech 3rd Year EE| Tezpur University',
+        Designation: 'B.tech 4th Year EE| Tezpur University',
         LinkedInlink: 'https://in.linkedin.com/in/pratik-chanda-a498aa214',
         GitHublink: '#',
       },
+      // Name : Kumarjit Ray
       {
         name: 'Kumarjit Ray',
         path: './../../../assets/photos/team/kumarjit.JPG',
@@ -82,6 +90,7 @@ export class TeamComponent {
         LinkedInlink: 'https://in.linkedin.com/in/kumarjit1997',
         GitHublink: '#',
       },
+      // Name : Rajdeep Ghosh
       {
         name: 'Rajdeep Ghosh',
         path: './../../../assets/photos/team/rajdeep.jpg',
@@ -89,32 +98,85 @@ export class TeamComponent {
         LinkedInlink: 'https://in.linkedin.com/in/rajdeep-ghosh-301082175',
         GitHublink: '#',
       },
+      // Name : Arindom Aich
       {
         name: 'Arindom Aich',
         path: './../../../assets/photos/team/arindom.jpg',
-        Designation: 'B.tech 3rd Year CSE | Tezpur University',
+        Designation: 'B.tech 4th Year CSE | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/arindomaich',
         GitHublink: '#',
       },
+      // Name : Bhargab Pratim Nath
       {
         name: 'Bhargab Pratim Nath',
         path: './../../../assets/photos/team/bhargav.jpg',
-        Designation: 'B.tech 2nd Year ECE | Tezpur University',
+        Designation: 'B.tech 3rd Year ECE | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/bhargab-pratim-nath-a777b3216S',
         GitHublink: '#',
       },
+      // Name : Chandrima Paul
       {
         name: 'Chandrima',
         path: './../../../assets/photos/team/Chandrima.jpg',
-        Designation: 'B.tech 2nd Year CSE | Tezpur University',
+        Designation: 'B.tech 3rd Year CSE | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/chandrima-p-71b452228/',
         GitHublink: '#',
+      },
+      // Name : Tanushree Das
+      {
+        name: 'Tanushree Das',
+        path: './../../../assets/photos/team/tanushree.jpg',
+        Designation: 'B.tech 4th Year CSE | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/tanushree-das-80a927209',
+        GitHublink: '#',
+      },
+      // Name : Antara Singhal
+      {
+        name: 'Antara Singhal',
+        path: './../../../assets/photos/team/antara.png',
+        Designation: 'B.tech 4th Year CSE | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/antara-singhal',
+        GitHublink: '#',
+      },
+      // Name : Vivek
+      {
+        name: 'Vivek Rai',
+        path: './../../../assets/photos/team/vivek.png',
+        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/vivek-rai-452b22218',
+        GitHublink: "https://github.com/vivekrai9900",
+      },
+      // Name : Dhritideepa Sarania
+      {
+        name: 'Dhritideepa Sarania',
+        path: './../../../assets/photos/team/dhritideepa.png',
+        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/dhritideepa-sarania-761b40250',
+        GitHublink: "https://github.com/dee-sarania",
+      },
+      // Name : Rajveer Chaudhary
+      {
+        name: 'Rajveer Chaudhary',
+        path: './../../../assets/photos/team/rajveer.png',
+        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/RajveerChoudhary/',
+        GitHublink: "https://github.com/Rajveer6000",
+      },
+
+      // Name : PraptiPriya Phukon
+      {
+        name: 'PraptiPriya Phukon',
+        path: './../../../assets/photos/team/praptipriya.png',
+        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/praptipriya-phukon-07a83b223',
+        GitHublink: "#",
       },
     ];
   }
 
   getfoundingmembers(): TeamMember[] {
     return [
+      // Name : Dilwar Hussain Barbhuiya
       {
         name: 'Dilwar Hussain Barbhuiya',
         path: './../../../assets/photos/team/dilwar.jpg',
@@ -122,6 +184,7 @@ export class TeamComponent {
         LinkedInlink: 'https://www.linkedin.com/in/johndoe/',
         GitHublink: '#',
       },
+      // Name : Kumarjit Ray
       {
         name: 'Kumarjit Ray',
         path: './../../../assets/photos/team/kumarjit.JPG',
@@ -129,6 +192,7 @@ export class TeamComponent {
         LinkedInlink: 'https://in.linkedin.com/in/kumarjit1997',
         GitHublink: '#',
       },
+      // Name : Kunal das
       {
         name: 'Kunal Das',
         path: './../../../assets/photos/team/kunal.jpg',
@@ -136,6 +200,7 @@ export class TeamComponent {
         LinkedInlink: 'https://in.linkedin.com/in/kunal-das-131158185',
         GitHublink: '#',
       },
+      // Name : Rajdeep Ghosh
       {
         name: 'Rajdeep Ghosh',
         path: './../../../assets/photos/team/rajdeep.jpg',
@@ -143,6 +208,7 @@ export class TeamComponent {
         LinkedInlink: 'https://in.linkedin.com/in/rajdeep-ghosh-301082175',
         GitHublink: '#',
       },
+      // Name : Adittya Dey
       {
         name: 'Adittya Dey',
         path: './../../../assets/photos/team/adittya.jpg',
@@ -154,6 +220,8 @@ export class TeamComponent {
   }
   getpastmembers(): TeamMember[] {
     return [
+
+      // Name : Prabhatangshu Phukan
       {
         name: 'Prabhatangshu Phukan',
         path: './../../../assets/photos/team/prabhat.jpeg',
@@ -161,6 +229,7 @@ export class TeamComponent {
         LinkedInlink: 'https://www.linkedin.com/in/prabhatangshu-phukan',
         GitHublink: '#',
       },
+      // Name : Debangee Goswami
       {
         name: 'Debangee Goswami',
         path: './../../../assets/photos/team/debangee.jpeg',
@@ -168,6 +237,7 @@ export class TeamComponent {
         LinkedInlink: 'https://www.linkedin.com/in/debangee-goswami-601577222',
         GitHublink: '#',
       },
+      // Name : Dibyaroop Das
       {
         name: 'Dibyaroop Das',
         path: './../../../assets/photos/team/dibya.jpg',
@@ -175,6 +245,7 @@ export class TeamComponent {
         LinkedInlink: 'https://in.linkedin.com/in/dibyaroop-das-8803a41a4',
         GitHublink: '#',
       },
+      // Name : Deekshith Kumar
       {
         name: 'Deekshith Kumar',
         path: './../../../assets/photos/team/deekshith.jpg',
@@ -182,20 +253,7 @@ export class TeamComponent {
         LinkedInlink: '#',
         GitHublink: '#',
       },
-      {
-        name: 'Tanushree Das',
-        path: './../../../assets/photos/team/tanushree.jpg',
-        Designation: 'B.tech 3rd Year CSE | Tezpur University',
-        LinkedInlink: 'https://www.linkedin.com/in/tanushree-das-80a927209',
-        GitHublink: '#',
-      },
-      {
-        name: 'Antara Singhal',
-        path: './../../../assets/photos/team/antara.png',
-        Designation: 'B.tech 3rd Year CSE | Tezpur University',
-        LinkedInlink: 'https://www.linkedin.com/in/antara-singhal',
-        GitHublink: '#',
-      },
+
     ];
   }
   removeclass(): void {

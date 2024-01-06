@@ -9,9 +9,5 @@ import { Component,Input } from '@angular/core';
 })
 export class TeamCardComponent {
   @Input() member: any;
-  // name = "Rajveer choudahary";
-  // Profession = "PUBG Player";
-  // path = "../../../assets/photos/team member.jpg";
-  // LinkedInlink = "#";
-  // GitHublink = "#";
+
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Page404Component } from '../../page-404/page-404.component';
+import { Page404Component } from '../../pages/page-404/page-404.component';
+import { Router, RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -9,22 +10,34 @@ import { Page404Component } from '../../page-404/page-404.component';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+  constructor(private router: Router) { }
+
+  gotopage(pagename: string, id: string): void {
+    this.router.navigate([`${pagename}`]);
+    setTimeout(() => {
+      console.log("This message will be displayed after a delay");
+      document.getElementById(`${id}`)?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+
+  }
   homepage(): void {
-    document.getElementById("homepage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('', "homepage");
   }
   aboutpage(): void {
-    document.getElementById("aboutuspage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('', "aboutuspage");
   }
   publicationspage(): void {
-    document.getElementById("publicationspage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('publication', "publicationspage");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
   }
   portfoliopage(): void {
-    document.getElementById("portfoliopage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('', "portfoliopage");
   }
   teampage(): void {
-    document.getElementById("teampage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('', "teampage");
   }
   contactuspage(): void {
-    document.getElementById("contactuspage")?.scrollIntoView({ behavior: "smooth" });
+    this.gotopage('', "contactuspage");
   }
 }

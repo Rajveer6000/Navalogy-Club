@@ -1,0 +1,20 @@
+.active .textpera {
+    display: block;
+
+}
+
+.active .color {
+    /* display: block; */
+    background-color: aqua;
+} 
+
+.chivron {
+    transition: all 0.4s ease-in;
+}
+
+.active .chivron {
+    transform: rotate(180deg);
+}
+.shadowclass {
+    box-shadow: 5px 10px 10px #dda3ff;
+}
