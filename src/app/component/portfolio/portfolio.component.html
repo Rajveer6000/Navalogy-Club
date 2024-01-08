@@ -1,66 +1,11 @@
-<div class="flex justify-center text-4xl text-[#bf3fff] font-bold">
-    <span class="border-b-2 border-[#b433ff]">Portfolio</span>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-3 mt-10 mb-2">
-    <button id="all1"
-        class="buttoncolor w-full md:w-36 h-8 bg-[#fbf3ff] hover:bg-[#b433ff] hover:text-white rounded-lg font-semibold"
-        (click)="all()">All</button>
-    <button id="SDN1"
-        class="text-[#b433ff] bg-[#fbf3ff] w-full md:w-36 h-8 hover:bg-[#b433ff] hover:text-white rounded-lg font-semibold"
-        (click)="SDN()">SDN</button>
-    <button id="cloud1"
-        class="text-[#b433ff] bg-[#fbf3ff] w-full md:w-36 h-8 hover:bg-[#b433ff] hover:text-white rounded-lg font-semibold"
-        (click)="cloud()">Cloud/Fog</button>
-    <button id="hardware1"
-        class="text-[#b433ff] bg-[#fbf3ff] w-full md:w-36 h-8 hover:bg-[#b433ff] hover:text-white rounded-lg font-semibold"
-        (click)="hardware()">Hardware</button>
-</div>
-
-
-<div class="bg-[#b433ff] h-[2px] rounded-full  w-full mb-10">
-</div>
-
-<div class=" activeclass deactiveclass gap-10 flex-wrap justify-center  " id="all">
-    <div class=" xl:grid xl:grid-cols-4 md:grid md:grid-cols-2  sm:grid sm:grid-cols-1 sm:my-2 ">
-        <div
-            class="mx-3 transform   transition duration-500 hover:scale-105  flex justify-center items-center sm:my-2 ">
-            <img src="./../../../assets/photos/AT_OVS.jpg" alt="SDN img">
-        </div>
-        <div class="mx-3 transform   transition duration-500 hover:scale-105  flex justify-center items-cente sm:my-2">
-            <img class="h-400 w-200" src="./../../../assets/photos/fog.png" alt="cloud images">
-        </div>
-        <div class="mx-3 transform   transition duration-500 hover:scale-105  flex justify-center items-cente sm:my-2">
-            <img class="h-400 w-200" src="./../../../assets/photos/app_iomt.png" alt="hardware images">
-        </div>
-        <div class="mx-3 transform   transition duration-500 hover:scale-105  flex justify-center items-cente sm:my-2">
-            <img class="h-400 w-200" src="./../../../assets/photos/full_glove.png" alt="hardware images">
-        </div>
-
-
+<div>
+    <div class=" text-center text-4xl text-[#bf3fff] font-bold">
+        <span class="border-b-2 border-[#b433ff]">Portfolio</span>
     </div>
-</div>
-
-<div class="hidden   gap-10 flex-wrap justify-center " id="SDN">
-    <div class="transform h-1/4 w-1/4 transition duration-500 hover:scale-110  flex justify-center items-cente">
-        <img class="h-1/2  flex-auto" src="./../../../assets/photos/AT_OVS.jpg" alt="SDN img">
-
+    
+    <div class="flex gap-10 mt-10 justify-center flex-wrap">
+        <div *ngFor="let cards of card()">
+            <app-portfolio-item [card]="cards"></app-portfolio-item>
+        </div>
     </div>
-</div>
-
-<div class="hidden  gap-10 flex-wrap justify-center  " id="cloud">
-    <div class="grid grid-cols-2 space-x-5">
-        <div class="transform  h-60 transition duration-500 hover:scale-110  flex justify-center items-cente"><img
-                src="./../../../assets/photos/fog.png" alt="cloud/fog img"> </div>
-        <div class="transform  h-60 transition duration-500 hover:scale-110  flex justify-center items-cente"><img
-                src="./../../../assets/photos/app_iomt.png" alt="cloud/fog img"> </div>
-
-    </div>
-
-</div>
-
-<div class="hidden  gap-10 flex-wrap justify-center " id="hardware">
-    <div class="transform  h-60 transition duration-500 hover:scale-110  flex justify-center items-cente">
-        <img src="./../../../assets/photos/full_glove.png" alt="hardware img">
-    </div>
-
 </div>

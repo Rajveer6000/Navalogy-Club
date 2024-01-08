@@ -20,12 +20,13 @@ import { PublicationCardComponent } from './component/publication-card/publicati
 import { NavalogypageComponent } from './pages/navalogypage/navalogypage.component';
 import { PublicationComponent } from './pages/publication/publication.component';
 import { routes } from './app.routes';
+import { PortfolioDetailsComponent } from './pages/portfolio-details/portfolio-details.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterLink, RouterModule, ToastrModule, RouterOutlet, NavBarComponent, GalleryComponent, FooterComponent, HomeComponent, TeamCardComponent, TeamComponent, AboutusComponent,
-    PortfolioComponent, ScrolltopComponent, RouterLink, NavalogypageComponent, PublicationComponent, FormsModule, PublicationCardComponent, PublicationsComponent, ContactusComponent, PortfolioItemComponent, Page404Component, RouterOutlet, RouterLink, RouterLinkActive],
+    PortfolioComponent,PortfolioDetailsComponent, ScrolltopComponent, RouterLink, NavalogypageComponent, PublicationComponent, FormsModule, PublicationCardComponent, PublicationsComponent, ContactusComponent, PortfolioItemComponent, Page404Component, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

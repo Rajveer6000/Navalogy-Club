@@ -1,7 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
-import { waitForAsync } from '@angular/core/testing';
 
 @Component({
   selector: 'app-nav-bar',
@@ -34,10 +33,10 @@ export class NavBarComponent {
   closeMobileMenu() {
     this.isMobileMenuOpen = false;
   }
+
   gotopage(pagename: string, id: string): void {
     this.router.navigate([`${pagename}`]);
     setTimeout(() => {
-      console.log("This message will be displayed after a delay");
       document.getElementById(`${id}`)?.scrollIntoView({ behavior: "smooth" });
     }, 100);
 

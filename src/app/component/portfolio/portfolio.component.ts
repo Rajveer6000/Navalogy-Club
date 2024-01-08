@@ -1,7 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { PortfolioItemComponent } from '../portfolio-item/portfolio-item.component';
-
+export interface cards {
+  imagepath: string,
+  title: string,
+  short_description: string,
+  id: string,
+  type: string,
+}
 
 @Component({
   selector: 'app-portfolio',
@@ -11,44 +17,30 @@ import { PortfolioItemComponent } from '../portfolio-item/portfolio-item.compone
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
-  all(): void {
-    this.removeclass();
-    document.getElementById("all1")?.classList.add('buttoncolor');
-    document.getElementById("all")?.classList.add('activeclass');
-    console.log('all');
-  };
-  SDN(): void {
-    this.removeclass();
-    document.getElementById("SDN1")?.classList.add('buttoncolor');
-    document.getElementById("SDN")?.classList.add('activeclass');
-    console.log('SDN');
-  };
+  card(): cards[] {
+    return [
+      {
+        id: '1',
+        type: 'SDN',
+        title: 'Dynamic Network Orchestrator',
+        short_description: `The Dynamic Network Orchestrator is a Software-Defined Networking (SDN) solution that redefines network management.`,
+        imagepath: './../../../assets/photos/AT_OVS.png',
+      },
+      {
+        id: '2',
+        type: "Cloud/Fog",
+        title: `Smart Cloud Hub`,
+        short_description: `The Smart Cloud Hub is a groundbreaking project that leverages cloud and fog computing to enhance data processing and storage capabilities. `,
 
-  cloud(): void {
-    this.removeclass();
-    document.getElementById("cloud1")?.classList.add('buttoncolor');
-    document.getElementById("cloud")?.classList.add('activeclass');
-    console.log('cloud');
-  };
-
-  hardware(): void {
-    this.removeclass();
-    document.getElementById("hardware")?.classList.add('activeclass');
-    document.getElementById("hardware1")?.classList.add('buttoncolor');
-
-    console.log('hardware');
-  };
-
-  removeclass(): void {
-    document.getElementById("all")?.classList.remove('activeclass');
-    document.getElementById("SDN")?.classList.remove('activeclass');
-    document.getElementById("cloud")?.classList.remove('activeclass');
-    document.getElementById("hardware")?.classList.remove('activeclass');
-    document.getElementById("all1")?.classList.remove('buttoncolor');
-    document.getElementById("SDN1")?.classList.remove('buttoncolor');
-    document.getElementById("cloud1")?.classList.remove('buttoncolor');
-    document.getElementById("hardware1")?.classList.remove('buttoncolor');
-    console.log('remove');
-
+        imagepath: './../../../assets/photos/fog.png',
+      },
+      {
+        id: '3',
+        type: "Hardware",
+        title: `Smart Wearable Health Monitor`,
+        short_description: `The Smart Wearable Health Monitor is an advanced hardware project designed to provide real-time health tracking and monitoring.`,
+        imagepath: './../../../assets/photos/full_glove.png',
+      },
+    ]
   }
 }

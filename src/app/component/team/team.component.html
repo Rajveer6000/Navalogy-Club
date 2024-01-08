@@ -3,24 +3,29 @@
     <p class=" sm:text-4xl text-3xl  text-[#bf3fff] font-semibold "><span
         class="border-b-2 border-[#b433ff]">Members</span></p>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 mb-3 mt-10 place-items-center">
-    <button id="Mentor1" class="buttoncolor w-full h-10 bg-[#fbf3ff] hover:bg-[#b433ff] hovershadow rounded-lg"
-      (click)="Mentor()">
-      <p class="py-2 hover:text-white font-semibold text-[#b433ff]">Mentor</p>
-    </button>
-    <button id="CurrentScholars1" class=" w-full h-10 bg-[#fbf3ff] hover:bg-[#b433ff] hovershadow rounded-lg"
+  <div class="flex justify-center flex-wrap xl:gap-14 lg:gap-8 gap-4 mb-3 mt-10 place-items-center">
+    <button id="CurrentScholars1"
+      class=" sm:w-40 w-32 sm:text-base text-xs h-10 bg-[#fbf3ff] hover:bg-[#b433ff] hovershadow rounded-lg"
       (click)="CurrentScholars()">
       <p class="py-2 hover:text-white font-semibold text-[#b433ff]">Current Scholars</p>
     </button>
-    <button id="Currentmembers1" class=" w-full h-10 bg-[#fbf3ff] hover:bg-[#b433ff] hovershadow rounded-lg"
+    <button id="Currentmembers1"
+      class=" sm:w-40 w-32 sm:text-base text-xs h-10 bg-[#fbf3ff] hover:bg-[#b433ff] hovershadow rounded-lg"
       (click)="Currentmembers()">
       <p class="py-2 hover:text-white font-semibold text-[#b433ff]">Current Members</p>
     </button>
-    <button id="foundingmembers1" class=" w-full h-10 bg-[#fbf3ff] hover:bg-[#b433ff] hovershadow rounded-lg"
+    <button id="Mentor1"
+      class="buttoncolor sm:w-40 w-32 sm:text-base text-xs h-10 bg-[#fbf3ff] hover:bg-[#b433ff] hovershadow rounded-lg"
+      (click)="Mentor()">
+      <p class="py-2 hover:text-white font-semibold text-[#b433ff]">Mentor</p>
+    </button>
+    <button id="foundingmembers1"
+      class=" sm:w-40 w-32 sm:text-base text-xs h-10 bg-[#fbf3ff] hover:bg-[#b433ff] hovershadow rounded-lg"
       (click)="foundingmembers()">
       <p class="py-2 hover:text-white font-semibold text-[#b433ff]">Founding Members</p>
     </button>
-    <button id="pastmembers1" class=" w-full h-10 bg-[#fbf3ff] hover:bg-[#b433ff] hovershadow rounded-lg"
+    <button id="pastmembers1"
+      class=" sm:w-40 w-32 sm:text-base text-xs h-10 bg-[#fbf3ff] hover:bg-[#b433ff] hovershadow rounded-lg"
       (click)="pastmembers()">
       <p class="py-2 hover:text-white font-semibold text-[#b433ff]">Past Members</p>
     </button>

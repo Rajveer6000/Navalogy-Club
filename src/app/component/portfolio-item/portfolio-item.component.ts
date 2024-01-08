@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio-item',
@@ -9,5 +10,15 @@ import { Component } from '@angular/core';
   styleUrl: './portfolio-item.component.css'
 })
 export class PortfolioItemComponent {
+  @Input() card: any;
 
+  constructor(private router: Router) { }
+
+  gotopage(pagename: string, id: string): void {
+    this.router.navigate([`${pagename}`]);
+    setTimeout(() => {
+      document.getElementById(`${id}`)?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+    console.log(id)
+  }
 }
