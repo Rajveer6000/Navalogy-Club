@@ -171,6 +171,13 @@ export class TeamComponent {
         LinkedInlink: 'https://www.linkedin.com/in/praptipriya-phukon-07a83b223',
         GitHublink: "#",
       },
+      {
+        name: 'Himanshu Sharma',
+        path: './../../../assets/photos/team/profile-img-round.png',
+        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
+        LinkedInlink: '#',
+        GitHublink: "https://github.com/IVYLIFE",
+      },
     ];
   }
 
