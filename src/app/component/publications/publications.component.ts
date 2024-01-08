@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-publications',
@@ -8,6 +10,11 @@ import { Component } from '@angular/core';
   styleUrl: './publications.component.css'
 })
 export class PublicationsComponent {
+   constructor(private router: Router) { }
+  gotopage(pagename: string): void {
+    this.router.navigate([`${pagename}`]);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   first(): void {
     let a = document.getElementById("01");
     if (a?.classList.contains("activeclass"))
