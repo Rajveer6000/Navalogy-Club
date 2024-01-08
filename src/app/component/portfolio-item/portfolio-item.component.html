@@ -1,5 +1,5 @@
 <div
-    class="shadowclass md:h-[400px] w-[290px]  bg-[#fbf3ff] hover:scale-105 hover:transition-all hover:duration-500 shadow-class rounded-xl overflow-hidden px-5 py-5">
+    class="shadowclass md:h-[400px] w-72 bg-[#fbf3ff] hover:scale-105 hover:transition-all hover:duration-500 shadow-class rounded-xl overflow-hidden px-5 py-5">
     <div class="h-44">
         <img class="object-cover h-full  mx-auto" src="{{card.imagepath}}" alt="Card Image">
     </div>
@@ -11,9 +11,9 @@
         <div class="text-gray-500">
             <p class="text-sm  md:text-xs">{{card.short_description}}...</p>
         </div>
-        <div class="text-center h-8 ">
+        <div class="text-center h-8 md:my-3 my-2 ">
             <button
-                class="my-3 px-4 py-2 hover:text-[#b433ff] text-white text-sm font-bold  hover:bg-white bg-[#aa17ff] rounded-md"
+                class="h-8 w-28  hover:text-[#b433ff] text-white text-sm font-bold  hover:bg-white bg-[#aa17ff] rounded-md"
                 (click)="gotopage('portfolio_details',card.id)">Read
                 More</button>
         </div>
