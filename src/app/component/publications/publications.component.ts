@@ -15,6 +15,8 @@ export class PublicationsComponent {
     this.router.navigate([`${pagename}`]);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  
   first(): void {
     let a = document.getElementById("01");
     if (a?.classList.contains("activeclass"))

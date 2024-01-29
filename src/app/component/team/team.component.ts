@@ -173,7 +173,7 @@ export class TeamComponent {
       },
       {
         name: 'Himanshu Sharma',
-        path: './../../../assets/photos/team/profile-img-round.png',
+        path: './../../../assets/photos/team/himanshu.png',
         Designation: 'B.Tech 3rd Year CSE | Tezpur University',
         LinkedInlink: '#',
         GitHublink: "https://github.com/IVYLIFE",

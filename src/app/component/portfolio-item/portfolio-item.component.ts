@@ -18,7 +18,7 @@ export class PortfolioItemComponent {
     this.router.navigate([`${pagename}`]);
     setTimeout(() => {
       document.getElementById(`${id}`)?.scrollIntoView({ behavior: "smooth" });
-    }, 100);
+    }, 1000);
     console.log(id)
   }
 }
