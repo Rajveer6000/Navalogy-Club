@@ -54,7 +54,7 @@ export class TeamComponent {
       {
         name: 'Tridib Lochan Dutta',
         path: './../../../assets/photos/team/tridib.jpeg',
-        Designation: 'B.tech 3rd Year ECE | Tezpur University',
+        Designation: 'B.tech 4th Year ECE | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/debangee-goswami-601577222',
         GitHublink: '#',
       },
@@ -62,7 +62,7 @@ export class TeamComponent {
       {
         name: 'Pritindra Das',
         path: './../../../assets/photos/team/pritindra.jpg',
-        Designation: 'B.tech 4th Year CSE | Tezpur University',
+        Designation: 'B.tech CSE Pass Out(2023) | Tezpur University',
         LinkedInlink: 'https://in.linkedin.com/in/pritindra-das',
         GitHublink: '#',
       },
@@ -70,7 +70,7 @@ export class TeamComponent {
       {
         name: 'Vicky Deka',
         path: './../../../assets/photos/team/vicky.jpg',
-        Designation: 'B.tech 4th Year CSE | Tezpur University',
+        Designation: 'B.tech CSE Pass Out(2023) | Tezpur University',
         LinkedInlink: 'https://in.linkedin.com/in/vickydeka',
         GitHublink: '#',
       },
@@ -232,7 +232,7 @@ export class TeamComponent {
       {
         name: 'Prabhatangshu Phukan',
         path: './../../../assets/photos/team/prabhat.jpeg',
-        Designation: 'B.tech 4th Year EE | Tezpur University',
+        Designation: 'B.tech EE Pass Out(2023) | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/prabhatangshu-phukan',
         GitHublink: '#',
       },
@@ -240,7 +240,7 @@ export class TeamComponent {
       {
         name: 'Debangee Goswami',
         path: './../../../assets/photos/team/debangee.jpeg',
-        Designation: 'B.tech 4th Year EE | Tezpur University',
+        Designation: 'B.tech EE Pass Out(2023) | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/debangee-goswami-601577222',
         GitHublink: '#',
       },
@@ -248,7 +248,7 @@ export class TeamComponent {
       {
         name: 'Dibyaroop Das',
         path: './../../../assets/photos/team/dibya.jpg',
-        Designation: 'B.tech 4th Year CSE | Tezpur University',
+        Designation: 'B.tech CSE Pass Out(2023) | Tezpur University',
         LinkedInlink: 'https://in.linkedin.com/in/dibyaroop-das-8803a41a4',
         GitHublink: '#',
       },
@@ -256,7 +256,7 @@ export class TeamComponent {
       {
         name: 'Deekshith Kumar',
         path: './../../../assets/photos/team/deekshith.jpg',
-        Designation: 'B.tech 3rd Year CSE | Tezpur University',
+        Designation: 'B.tech 4th Year CSE | Tezpur University',
         LinkedInlink: '#',
         GitHublink: '#',
       },
