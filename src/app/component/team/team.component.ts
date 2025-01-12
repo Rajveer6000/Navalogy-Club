@@ -162,15 +162,6 @@ export class TeamComponent {
         LinkedInlink: 'https://www.linkedin.com/in/RajveerChoudhary/',
         GitHublink: "https://github.com/Rajveer6000",
       },
-
-      // Name : PraptiPriya Phukon
-      {
-        name: 'PraptiPriya Phukon',
-        path: './../../../assets/photos/team/praptipriya.png',
-        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
-        LinkedInlink: 'https://www.linkedin.com/in/praptipriya-phukon-07a83b223',
-        GitHublink: "#",
-      },
       {
         name: 'Himanshu Sharma',
         path: './../../../assets/photos/team/himanshu.png',
