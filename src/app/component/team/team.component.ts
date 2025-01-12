@@ -50,38 +50,7 @@ export class TeamComponent {
   }
   getCurrentmembers(): TeamMember[] {
     return [
-      // Name : Tridib Lochan Dutta
-      {
-        name: 'Tridib Lochan Dutta',
-        path: './../../../assets/photos/team/tridib.jpeg',
-        Designation: 'B.tech 4th Year ECE | Tezpur University',
-        LinkedInlink: 'https://www.linkedin.com/in/debangee-goswami-601577222',
-        GitHublink: '#',
-      },
-      // Name : Pritindra Das
-      {
-        name: 'Pritindra Das',
-        path: './../../../assets/photos/team/pritindra.jpg',
-        Designation: 'B.tech CSE Pass Out(2023) | Tezpur University',
-        LinkedInlink: 'https://in.linkedin.com/in/pritindra-das',
-        GitHublink: '#',
-      },
-      // Name : Vicky Deka
-      {
-        name: 'Vicky Deka',
-        path: './../../../assets/photos/team/vicky.jpg',
-        Designation: 'B.tech CSE Pass Out(2023) | Tezpur University',
-        LinkedInlink: 'https://in.linkedin.com/in/vickydeka',
-        GitHublink: '#',
-      },
-      // Name : Pratik Chanda
-      {
-        name: 'Pratik Chanda',
-        path: './../../../assets/photos/team/Pratik.jpg',
-        Designation: 'B.tech 4th Year EE| Tezpur University',
-        LinkedInlink: 'https://in.linkedin.com/in/pratik-chanda-a498aa214',
-        GitHublink: '#',
-      },
+    
       // Name : Kumarjit Ray
       {
         name: 'Kumarjit Ray',
@@ -98,51 +67,19 @@ export class TeamComponent {
         LinkedInlink: 'https://in.linkedin.com/in/rajdeep-ghosh-301082175',
         GitHublink: '#',
       },
-      // Name : Arindom Aich
-      {
-        name: 'Arindom Aich',
-        path: './../../../assets/photos/team/arindom.jpg',
-        Designation: 'B.tech 4th Year CSE | Tezpur University',
-        LinkedInlink: 'https://www.linkedin.com/in/arindomaich',
-        GitHublink: '#',
-      },
-      // Name : Bhargab Pratim Nath
-      {
-        name: 'Bhargab Pratim Nath',
-        path: './../../../assets/photos/team/bhargav.jpg',
-        Designation: 'B.tech 3rd Year ECE | Tezpur University',
-        LinkedInlink: 'https://www.linkedin.com/in/bhargab-pratim-nath-a777b3216S',
-        GitHublink: '#',
-      },
       // Name : Chandrima Paul
       {
         name: 'Chandrima',
         path: './../../../assets/photos/team/Chandrima.jpg',
-        Designation: 'B.tech 3rd Year CSE | Tezpur University',
+        Designation: 'B.tech 4th Year CSE | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/chandrima-p-71b452228/',
-        GitHublink: '#',
-      },
-      // Name : Tanushree Das
-      {
-        name: 'Tanushree Das',
-        path: './../../../assets/photos/team/tanushree.jpg',
-        Designation: 'B.tech 4th Year CSE | Tezpur University',
-        LinkedInlink: 'https://www.linkedin.com/in/tanushree-das-80a927209',
-        GitHublink: '#',
-      },
-      // Name : Antara Singhal
-      {
-        name: 'Antara Singhal',
-        path: './../../../assets/photos/team/antara.png',
-        Designation: 'B.tech 4th Year CSE | Tezpur University',
-        LinkedInlink: 'https://www.linkedin.com/in/antara-singhal',
         GitHublink: '#',
       },
       // Name : Vivek
       {
         name: 'Vivek Rai',
         path: './../../../assets/photos/team/vivek.png',
-        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
+        Designation: 'B.Tech 4th Year CSE | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/vivek-rai-452b22218',
         GitHublink: "https://github.com/vivekrai9900",
       },
@@ -150,7 +87,7 @@ export class TeamComponent {
       {
         name: 'Dhritideepa Sarania',
         path: './../../../assets/photos/team/dhritideepa.png',
-        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
+        Designation: 'B.Tech 4th Year CSE | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/dhritideepa-sarania-761b40250',
         GitHublink: "https://github.com/dee-sarania",
       },
@@ -158,14 +95,15 @@ export class TeamComponent {
       {
         name: 'Rajveer Chaudhary',
         path: './../../../assets/photos/team/rajveer.png',
-        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
+        Designation: 'B.Tech 4th Year CSE | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/RajveerChoudhary/',
         GitHublink: "https://github.com/Rajveer6000",
       },
+      // Name : Himanshu Sharma
       {
         name: 'Himanshu Sharma',
         path: './../../../assets/photos/team/himanshu.png',
-        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
+        Designation: 'B.Tech 4th Year CSE | Tezpur University',
         LinkedInlink: '#',
         GitHublink: "https://github.com/IVYLIFE",
       },
@@ -218,7 +156,6 @@ export class TeamComponent {
   }
   getpastmembers(): TeamMember[] {
     return [
-
       // Name : Prabhatangshu Phukan
       {
         name: 'Prabhatangshu Phukan',
@@ -247,8 +184,73 @@ export class TeamComponent {
       {
         name: 'Deekshith Kumar',
         path: './../../../assets/photos/team/deekshith.jpg',
-        Designation: 'B.tech 4th Year CSE | Tezpur University',
+        Designation: 'B.tech CSE Pass Out(2024) | Tezpur University',
         LinkedInlink: '#',
+        GitHublink: '#',
+      },
+      
+      // Name : Arindom Aich
+      {
+        name: 'Arindom Aich',
+        path: './../../../assets/photos/team/arindom.jpg',
+        Designation: 'B.tech CSE Pass Out(2024) | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/arindomaich',
+        GitHublink: '#',
+      },
+       // Name : Tridib Lochan Dutta
+       {
+        name: 'Tridib Lochan Dutta',
+        path: './../../../assets/photos/team/tridib.jpeg',
+        Designation: 'B.tech ECE Pass Out(2024) | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/debangee-goswami-601577222',
+        GitHublink: '#',
+      },
+      // Name : Pritindra Das
+      {
+        name: 'Pritindra Das',
+        path: './../../../assets/photos/team/pritindra.jpg',
+        Designation: 'B.tech CSE Pass Out(2023) | Tezpur University',
+        LinkedInlink: 'https://in.linkedin.com/in/pritindra-das',
+        GitHublink: '#',
+      },
+      // Name : Vicky Deka
+      {
+        name: 'Vicky Deka',
+        path: './../../../assets/photos/team/vicky.jpg',
+        Designation: 'B.tech CSE Pass Out(2023) | Tezpur University',
+        LinkedInlink: 'https://in.linkedin.com/in/vickydeka',
+        GitHublink: '#',
+      },
+      // Name : Pratik Chanda
+      {
+        name: 'Pratik Chanda',
+        path: './../../../assets/photos/team/Pratik.jpg',
+        Designation: 'B.tech EE Pass Out(2024) | Tezpur University',
+        LinkedInlink: 'https://in.linkedin.com/in/pratik-chanda-a498aa214',
+        GitHublink: '#',
+      },
+       // Name : Tanushree Das
+       {
+        name: 'Tanushree Das',
+        path: './../../../assets/photos/team/tanushree.jpg',
+        Designation: 'B.tech CSE Pass Out(2024) | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/tanushree-das-80a927209',
+        GitHublink: '#',
+      },
+      // Name : Antara Singhal
+      {
+        name: 'Antara Singhal',
+        path: './../../../assets/photos/team/antara.png',
+        Designation: 'B.tech CSE Pass Out(2024) | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/antara-singhal',
+        GitHublink: '#',
+      },
+       // Name : Bhargab Pratim Nath
+       {
+        name: 'Bhargab Pratim Nath',
+        path: './../../../assets/photos/team/bhargav.jpg',
+        Designation: 'B.tech 4th Year ECE | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/bhargab-pratim-nath-a777b3216S',
         GitHublink: '#',
       },
 
