@@ -22,7 +22,7 @@ export class TeamComponent {
     return [
       {
         name: 'Dr. Nabajyoti Medhi',
-        path: './../../../assets/photos/team/medhi-sir.png',
+        path: './../../../assets/photos/team/Profile.jpeg',
         Designation: 'Assistant Professor | Tezpur University',
         LinkedInlink: 'https://scholar.google.com/citations?user=Qq6XheAAAAAJ&hl=en',
         GitHublink: '#',
@@ -73,6 +73,13 @@ export class TeamComponent {
         GitHublink: 'https://github.com/IVYLIFE',
       },
       {
+        name: 'Harshit Mahla',
+        path: './../../../assets/photos/team/harshit.jpeg',
+        Designation: 'B.Tech 4th Year CSE | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/harshit-mahla-70b72b241/',
+        GitHublink: 'https://github.com/harshit-mahla',
+      },
+      {
         name: 'Kumarjit Ray',
         path: './../../../assets/photos/team/kumarjit.JPG',
         Designation: 'PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan',
@@ -92,6 +99,20 @@ export class TeamComponent {
         Designation: 'B.Tech 4th Year CSE | Tezpur University',
         LinkedInlink: 'https://www.linkedin.com/in/RajveerChoudhary/',
         GitHublink: 'https://github.com/Rajveer6000',
+      },
+      {
+        name: 'Sanju Kumari Gupta',
+        path: './../../../assets/photos/team/Sanju.jpeg',
+        Designation: 'B.Tech 3rd Year CSE | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/sanju-kumari-gupta-bb3505283/',
+        GitHublink: 'https://github.com/Ian12003',
+      },
+      {
+        name: 'Sakil Aziz',
+        path: './../../../assets/photos/team/user.png',
+        Designation: 'B.Tech 3trd Year CSE | Tezpur University',
+        LinkedInlink: 'https://www.linkedin.com/in/sakil-a-2b0379256',
+        GitHublink: 'https://github.com/SakilAziz075',
       },
       {
         name: 'Vivek Rai',
